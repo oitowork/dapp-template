@@ -5,23 +5,23 @@ import {
   List,
   ListIcon,
   ListItem,
-} from '@chakra-ui/react'
-import { CheckCircleIcon, LinkIcon } from '@chakra-ui/icons'
+} from "@chakra-ui/react";
+import { CheckCircleIcon, LinkIcon } from "@chakra-ui/icons";
 
-import { Hero } from '../components/Hero'
-import { Container } from '../components/Container'
-import { Main } from '../components/Main'
-import { DarkModeSwitch } from '../components/DarkModeSwitch'
-import { CTA } from '../components/CTA'
-import { Footer } from '../components/Footer'
+import { Hero } from "../components/Hero";
+import { Container } from "../components/Container";
+import { Main } from "../components/Main";
+import { DarkModeSwitch } from "../components/DarkModeSwitch";
+import { CTA } from "../components/CTA";
+import { Footer } from "../components/Footer";
 
 const Index = () => (
-  <Container height="100vh">
+  <Container minHeight="100vh">
     <Hero />
     <Main>
       <Text>
-        DApp Template <Code>Ethers</Code> + <Code>Next.js</Code> + <Code>chakra-ui</Code> +{' '}
-        <Code>typescript</Code>.
+        DApp Template <Code>Ethers</Code> + <Code>Next.js</Code> +{" "}
+        <Code>chakra-ui</Code>+ <Code>Mobx</Code> + <Code>typescript</Code>.
       </Text>
 
       <List spacing={3} my={0}>
@@ -42,6 +42,12 @@ const Index = () => (
             Next.js <LinkIcon />
           </ChakraLink>
         </ListItem>
+        <ListItem>
+          <ListIcon as={CheckCircleIcon} color="green.500" />
+          <ChakraLink isExternal href="https://mobx.js.org/react-integration.html" flexGrow={1} mr={2}>
+            Mobx <LinkIcon />
+          </ChakraLink>
+        </ListItem>
       </List>
     </Main>
 
@@ -51,6 +57,6 @@ const Index = () => (
     </Footer>
     <CTA />
   </Container>
-)
+);
 
-export default Index
+export default Index;

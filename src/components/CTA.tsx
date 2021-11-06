@@ -19,7 +19,7 @@ export const CTA = () => (
 
     <ChakraLink
       isExternal
-      href="https://github.com/oito.work/dapp-template"
+      href="https://github.com/oitowork/dapp-template"
       flexGrow={3}
       mx={2}
     >
